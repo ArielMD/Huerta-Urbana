@@ -1,53 +1,36 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
+import React from "react";
+import Helmet from "react-helmet";
+import { createGlobalStyle } from "styled-components";
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+const GlobalStyled = createGlobalStyle`
+*{
+  margin:0px;
+  padding: 0px;
+}
 
-import Header from "./header"
-import "./layout.css"
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F5F5F5;
+}
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+`;
 
+const Layout = props => {
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
-}
+    <React.Fragment>
+      <GlobalStyled />
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+      <Helmet>
+        <title>Huerta Urbana</title>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway&display=swap"
+          rel="stylesheet"
+        ></link>
+      </Helmet>
 
-export default Layout
+      {props.children}
+    </React.Fragment>
+  );
+};
+
+export default Layout;
