@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import CardProduct from "./CardProduct";
+import CardPackages from "./CardPackages";
 import SwiperCore, { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
@@ -60,7 +61,7 @@ const Slide = styled(SwiperSlide)`
 
 SwiperCore.use([Navigation]);
 
-const Carrusel = ({ list, text }) => {
+const Carrusel = ({ list, text, type }) => {
   const [state, setState] = useState(0);
   console.log(state);
 
@@ -96,7 +97,8 @@ const Carrusel = ({ list, text }) => {
         {list.map(product => {
           return (
             <SwiperSlide>
-              <CardProduct juice={product} />
+              {type === "product" ? <CardProduct juice={product} /> : null}
+              {type === "package" ? <CardPackages pack={product} /> : null}
             </SwiperSlide>
           );
         })}
