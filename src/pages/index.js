@@ -3,8 +3,8 @@ import Layout from "../components/Layout";
 import Nav from "../components/Navbar";
 import Hero from "../components/Hero";
 import Info from "../components/Info";
-import ListProducts from "../components/ListProducts";
-import ListPackages from "../components/ListPackages";
+import ProductsList from "../components/ProductsList";
+import PackagesList from "../components/PackagesList";
 import Location from "../components/Location";
 import Footer from "../components/Footer";
 
@@ -14,8 +14,8 @@ const IndexPage = () => (
       <Nav />
     </Hero>
     <Info />
-    <ListProducts />
-    <ListPackages />
+    <ProductsList />
+    <PackagesList />
     <Location />
     <Footer />
   </Layout>
