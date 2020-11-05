@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { createGlobalStyle } from "styled-components";
+import bg from "../images/pattern.png";
 
 const GlobalStyled = createGlobalStyle`
 *{
@@ -11,6 +12,7 @@ const GlobalStyled = createGlobalStyle`
 body{
   font-family: 'Open Sans', sans-serif;
   background-color: #F5F5F5;
+  /* background-image: url(${bg}); */
 }
 
 `;

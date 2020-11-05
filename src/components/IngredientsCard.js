@@ -4,7 +4,7 @@ import styled from "styled-components";
 const IngredientStyled = styled.div`
   font-size: 12px;
   background-color: #efefef;
-  width: 125px;
+  width: 100%;
   padding: 5px 0px;
   border-radius: 5px;
   transition: all 0.5s ease-out;
@@ -37,8 +37,9 @@ const IngredientStyled = styled.div`
     padding-right: 5px;
   }
 
-  @media screen and (min-width: 834px) {
-    width: 125px;
+  @media (min-width: 768px) {
+    /* width: 125px; */
+    width: ${props => (props.extend ? "100%" : "125px")};
     align-self: flex-end;
     h3 {
       padding: 5px 0px;
@@ -53,7 +54,7 @@ const IngredientStyled = styled.div`
       padding: 0px 5px;
       font-size: 12px;
       display: flex;
-      flex-direction: column;
+      flex-direction: ${props => (props.extend ? "row" : "colum")};
     }
     li {
       margin: 1px 0px;
@@ -67,9 +68,9 @@ const IngredientStyled = styled.div`
   }
 `;
 
-const Ingredientes = ({ ingredients }) => {
+const Ingredientes = ({ ingredients, extend }) => {
   return (
-    <IngredientStyled>
+    <IngredientStyled extend={extend}>
       <h3>Ingredientes</h3>
       <ul>
         {ingredients.map((ingrediente, index) => (

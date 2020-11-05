@@ -7,7 +7,15 @@ const ListProducts = () => {
   return (
     <React.Fragment>
       <Banner text="Conoce Nuestros Saludables Productos" />
-      <Carrusel
+
+      {list.map(product => (
+        <Carrusel
+          type="product"
+          text={product.nombre}
+          list={product.productos}
+        />
+      ))}
+      {/* <Carrusel
         type="product"
         text="jugos Verdes (500ml)"
         list={list.jugosVerdes}
@@ -32,7 +40,7 @@ const ListProducts = () => {
         type="product"
         text="Bebidas Adicioneles"
         list={list.bebidasAdicionales}
-      />
+      /> */}
     </React.Fragment>
   );
 };

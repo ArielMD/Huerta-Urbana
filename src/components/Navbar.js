@@ -1,9 +1,9 @@
-import React, { useState } from "react"
-import styled from "styled-components"
-import logo from "../images/logo.png"
-import close from "../images/cerrar.png"
-import menu from "../images/menu.png"
-import { Link } from "gatsby"
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import logo from "../images/logo.png";
+import close from "../images/cerrar.png";
+import menu from "../images/menu.png";
+import { Link } from "gatsby";
 
 const Nav = styled.nav`
   height: 85px;
@@ -87,14 +87,14 @@ const Nav = styled.nav`
       margin-left: 5%;
     }
   } ;
-`
+`;
 
 const Navbar = () => {
-  const [state, setState] = useState(false)
+  const [state, setState] = useState(false);
 
   const handleState = () => {
-    setState(prevState => !prevState)
-  }
+    setState(prevState => !prevState);
+  };
 
   return (
     <Nav state={state}>
@@ -111,20 +111,20 @@ const Navbar = () => {
           Home
         </Link>
 
-        <Link className="menu-item" to={"/productos"}>
+        <Link className="menu-item" to={"/Products"}>
           Productos
         </Link>
 
-        <Link className="menu-item" to={"/nosotros"}>
+        <Link className="menu-item" to={"/AboutUs"}>
           Nosotros
         </Link>
 
-        <Link className="menu-item" to={"#"}>
+        <Link className="menu-item" to={"#contact"}>
           Contactanos
         </Link>
       </ul>
     </Nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

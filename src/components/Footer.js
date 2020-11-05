@@ -85,13 +85,13 @@ const FooterSyled = styled.footer`
 
 const Footer = () => {
   return (
-    <FooterSyled>
+    <FooterSyled id="contact">
       <img src={logo}></img>
       <div className="pages">
         <h2>Páginas</h2>
-        <Link>Home</Link>
-        <Link>Productos</Link>
-        <Link>Quienes somos</Link>
+        <Link to="/">Home</Link>
+        <Link to="/products">Productos</Link>
+        <Link to="/AboutUs">Quienes somos</Link>
       </div>
       <ul className="contact">
         <h2>Contactanos</h2>

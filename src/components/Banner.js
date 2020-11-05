@@ -27,7 +27,7 @@ const BannerStyled = styled.div`
     }
   }
 
-  @media screen and (min-width: 834px) and (max-width: 1440px) {
+  @media (min-width: 768px) and (max-width: 1200px) {
     height: 230px;
     div {
       h1 {
@@ -35,7 +35,7 @@ const BannerStyled = styled.div`
       }
     }
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1200px) {
     height: 400px;
     div {
       h1 {

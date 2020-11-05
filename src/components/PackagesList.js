@@ -7,7 +7,14 @@ const ListPackages = () => {
   return (
     <React.Fragment>
       <Banner text="Conoce Los Paquetes Que Tenemos Preparado Para Tí" />
-      <Carrusel
+      {list.map(product => (
+        <Carrusel
+          type="package"
+          text={product.nombre}
+          list={product.productos}
+        />
+      ))}
+      {/* <Carrusel
         type="package"
         text="Programas Detox"
         list={list.programaDetox}
@@ -16,7 +23,7 @@ const ListPackages = () => {
         type="package"
         text="Paquetes Adicionales"
         list={list.programaDetox}
-      />
+      /> */}
     </React.Fragment>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import CardIngredients from "./CardIngredients";
+import IngredientsCard from "./IngredientsCard";
 
 const CardStyled = styled.div`
   background: #ffffff;
@@ -49,7 +49,7 @@ const CardStyled = styled.div`
     transform: scale(1.2);
   } */
 
-  @media screen and (min-width: 834px) {
+  @media (min-width: 768px) {
     width: 210px;
     height: 275px;
     h1 {
@@ -86,7 +86,7 @@ const CardProduct = ({ juice }) => {
     <CardStyled image={juice.imagen}>
       <h1>{juice.nombre}</h1>
       <div className="bg-image">
-        <CardIngredients ingredients={juice.ingredientes}></CardIngredients>
+        <IngredientsCard ingredients={juice.ingredientes}></IngredientsCard>
       </div>
       <span>${juice.precio}</span>
     </CardStyled>
