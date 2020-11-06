@@ -18,7 +18,7 @@ import mora from "../images/ingredients/mora.png";
 import miel from "../images/ingredients/miel.png";
 import platano from "../images/ingredients/platano.png";
 import mango from "../images/ingredients/mango.png";
-// import cocoa from "../images/ingredients/";
+import cocoa from "../images/ingredients/cocoa.png";
 import linaza from "../images/ingredients/semilla.png";
 import almendra from "../images/ingredients/almendra.png";
 import zarzamora from "../images/ingredients/zarzamora.png";
@@ -131,7 +131,7 @@ const ingredientes = {
   },
   cocoa: {
     nombre: "Cocoa",
-    imagen: "c",
+    imagen: cocoa,
   },
   linaza: {
     nombre: "Linaza",
