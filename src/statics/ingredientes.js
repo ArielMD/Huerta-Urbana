@@ -1,9 +1,9 @@
 import remolacha from "../images/ingredients/remolacha.png";
-// import espinaca from "../images/ingredients/";
-// import perejil from "../images/ingredients/";
+import espinaca from "../images/ingredients/espinaca.png";
+import perejil from "../images/ingredients/perejil.png";
 import pepino from "../images/ingredients/pepino.png";
-// import manzana from "../images/ingredients/";
-// import limon from "../images/ingredients/";
+import manzana from "../images/ingredients/manzana.png";
+import limon from "../images/ingredients/limon.png";
 import pera from "../images/ingredients/pera.png";
 import jengibre from "../images/ingredients/raiz.png";
 import piña from "../images/ingredients/pina.png";
@@ -11,44 +11,47 @@ import coco from "../images/ingredients/coco.png";
 import naranja from "../images/ingredients/naranja.png";
 import zanahoria from "../images/ingredients/zanahoria.png";
 import toronja from "../images/ingredients/toronja.png";
-// import pimienta from "../images/ingredients/pimienta.png";
-// import curcuma from "../images/ingredients/";
+import pimienta from "../images/ingredients/pimienta.png";
+import curcuma from "../images/ingredients/raiz.png";
 import canela from "../images/ingredients/canela.png";
 import mora from "../images/ingredients/mora.png";
 import miel from "../images/ingredients/miel.png";
 import platano from "../images/ingredients/platano.png";
-// import mango from "../images/ingredients/";
+import mango from "../images/ingredients/mango.png";
 // import cocoa from "../images/ingredients/";
-// import linaza from "../images/ingredients/";
-// import almendras from "../images/ingredients/";
+import linaza from "../images/ingredients/semilla.png";
+import almendra from "../images/ingredients/almendra.png";
 import zarzamora from "../images/ingredients/zarzamora.png";
 import cacahuate from "../images/ingredients/cacahuate.png";
-// import hemp from "../images/ingredients/";
+import hemp from "../images/ingredients/semilla.png";
 import fresa from "../images/ingredients/fresa.png";
 import sal from "../images/ingredients/sal.png";
-// import datiles from "../images/ingredients/";
+import datiles from "../images/ingredients/datiles.png";
 import agua from "../images/ingredients/agua.png";
-// import avena from "../images/ingredients/avena.png";
+import avena from "../images/ingredients/avena.png";
 import aloe from "../images/ingredients/aloe-vera.png";
-// import chia from "../images/ingredients/";
+import chia from "../images/ingredients/semilla.png";
 import te from "../images/ingredients/te.png";
 import carbon from "../images/ingredients/carbon.png";
-// import stevia from "../images/ingredients/";
+import stevia from "../images/ingredients/estevia.png";
 import ajo from "../images/ingredients/ajo.png";
 import acelga from "../images/ingredients/acelga.png";
+import apio from "../images/ingredients/apio.png";
+import vainilla from "../images/ingredients/vainilla.png";
+import leche from "../images/ingredients/leche.png";
 
 const ingredientes = {
   espinacas: {
     nombre: "Espinacas",
-    imagen: "x",
+    imagen: espinaca,
   },
   perejil: {
     nombre: "Perejil",
-    imagen: "x",
+    imagen: perejil,
   },
   apio: {
     nombre: "Apio",
-    imagen: "x",
+    imagen: apio,
   },
   pepino: {
     nombre: "Pepino",
@@ -56,11 +59,11 @@ const ingredientes = {
   },
   manzana: {
     nombre: "Manzana",
-    imagen: "",
+    imagen: manzana,
   },
   limon: {
     nombre: "Limón",
-    imagen: "",
+    imagen: limon,
   },
   pera: {
     nombre: "Pera",
@@ -92,7 +95,7 @@ const ingredientes = {
   },
   pimientaCayena: {
     nombre: "Pimienta Cayena",
-    imagen: "x",
+    imagen: pimienta,
   },
   betabel: {
     nombre: "Betabel",
@@ -100,7 +103,7 @@ const ingredientes = {
   },
   curcuma: {
     nombre: "Cúrcuma",
-    imagen: "c",
+    imagen: curcuma,
   },
   canela: {
     nombre: "Canela",
@@ -108,7 +111,7 @@ const ingredientes = {
   },
   lecheCoco: {
     nombre: "Leche de Coco",
-    imagen: "c",
+    imagen: leche,
   },
   moras: {
     nombre: "Moras",
@@ -124,7 +127,7 @@ const ingredientes = {
   },
   mango: {
     nombre: "Mango",
-    imagen: "x",
+    imagen: mango,
   },
   cocoa: {
     nombre: "Cocoa",
@@ -132,11 +135,11 @@ const ingredientes = {
   },
   linaza: {
     nombre: "Linaza",
-    imagen: "cal",
+    imagen: linaza,
   },
   lecheAlmendras: {
-    nombre: "Leche de almendras",
-    imagen: "",
+    nombre: "leche de almendras",
+    imagen: leche,
   },
   zarzamoras: {
     nombre: "Zarzamoras",
@@ -148,7 +151,7 @@ const ingredientes = {
   },
   semillasHemp: {
     nombre: "Semillas de hemp",
-    imagen: "x",
+    imagen: hemp,
   },
   fresas: {
     nombre: "Fresas",
@@ -156,11 +159,11 @@ const ingredientes = {
   },
   vainilla: {
     nombre: "Vainilla",
-    imagen: "",
+    imagen: vainilla,
   },
   almendras: {
     nombre: "Almendras",
-    imagen: "x",
+    imagen: almendra,
   },
   sal: {
     nombre: "Sal de mar",
@@ -168,7 +171,7 @@ const ingredientes = {
   },
   datiles: {
     nombre: "Dátiles",
-    imagen: "x",
+    imagen: datiles,
   },
   aguaAlcalina: {
     nombre: "Agua alcalina",
@@ -180,15 +183,15 @@ const ingredientes = {
   },
   avena: {
     nombre: "Avena",
-    imagen: "avena",
+    imagen: avena,
   },
   ralladuraLimon: {
     nombre: "Ralladura de limón",
-    imagen: "",
+    imagen: limon,
   },
   pimientaNegra: {
     nombre: "Pimienta Negra",
-    imagen: "",
+    imagen: pimienta,
   },
   pulpaAloe: {
     nombre: "Pulpa de aloe",
@@ -196,7 +199,7 @@ const ingredientes = {
   },
   chia: {
     nombre: "Chía",
-    imagen: "",
+    imagen: chia,
   },
   teNegro: {
     nombre: "Té negro fermentado",
@@ -208,7 +211,7 @@ const ingredientes = {
   },
   estevia: {
     nombre: "Estevia natural",
-    imagen: "s",
+    imagen: stevia,
   },
   ajo: {
     nombre: "Ajo",
