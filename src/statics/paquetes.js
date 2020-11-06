@@ -114,7 +114,6 @@ const paquetes = [
           },
         ],
       },
-      ,
       {
         nombre: "Plan Reset",
         descripcion:

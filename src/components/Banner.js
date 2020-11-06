@@ -89,14 +89,14 @@ const Banner = ({ text, social, children }) => {
             <p>Realiza tus pedidos a traves de nuestras redes sociales</p>
             <div className="social">
               <a href="https://www.instagram.com/huertaurbana.vsa/">
-                <img src={instagram} />
+                <img src={instagram} alt="Instagram" />
               </a>
               <a href="https://www.facebook.com/HuertaUrbanavsa%20/">
-                <img src={facebook} />
+                <img src={facebook} alt="Facebook" />
               </a>
 
-              <a href="">
-                <img src={whatsapp} />
+              <a href="https://www.facebook.com/HuertaUrbanavsa%20/">
+                <img src={whatsapp} alt="WhatsApp" />
               </a>
             </div>
           </React.Fragment>

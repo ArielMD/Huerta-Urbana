@@ -9,6 +9,7 @@ const ExtendPackageList = () => {
       <Banner text="Conoce Los Paquetes Que Tenemos Preparado Para Tí" />
       {packages.map(pack => (
         <ProductCardList
+          key={pack.nombre}
           type="package"
           list={pack.productos}
           text={pack.nombre}

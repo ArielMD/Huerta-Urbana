@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "../images/logo.png";
 import close from "../images/cerrar.png";
@@ -106,6 +106,7 @@ const Navbar = () => {
 
       <img
         className="menu-icon"
+        alt="menu icon"
         src={state ? close : menu}
         onClick={handleState}
       />

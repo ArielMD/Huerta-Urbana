@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Banner from "./Banner";
 import list from "../statics/productos";
 import ProductCardList from "./ProductCardList";
@@ -8,7 +8,7 @@ const ExtendProductList = () => {
   const [juices, setJuices] = useState(list);
 
   const filter = id => {
-    if (id != 0) {
+    if (id !== 0) {
       setJuices(list.filter(product => product.id === id));
     } else {
       setJuices(list);
@@ -21,6 +21,7 @@ const ExtendProductList = () => {
       <Filter filter={filter} />
       {juices.map(product => (
         <ProductCardList
+          key={product.id}
           type="product"
           text={product.nombre}
           list={product.productos}

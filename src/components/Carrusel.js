@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import CardProduct from "./ProductCard";
 import CardPackages from "./PackagesCard";
@@ -22,17 +22,9 @@ const SwiperStyled = styled(Swiper)`
   }
 `;
 
-const Slide = styled(SwiperSlide)`
-  display: flex;
-  flex-direction: row;
-`;
-
 SwiperCore.use([Navigation]);
 
 const Carrusel = ({ list, text, type }) => {
-  const [state, setState] = useState(0);
-  console.log(state);
-
   // useEffect(() => {
   //   const handleResize = () => {
   //     if (window.innerWidth < 768) {
@@ -57,12 +49,12 @@ const Carrusel = ({ list, text, type }) => {
         spaceBetween={20}
         slidesPerView={3}
         navigation
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={swiper => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
+        // onSwiper={swiper => console.log(swiper)}
       >
         {list.map(product => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={product.nombre}>
               {type === "product" ? <CardProduct juice={product} /> : null}
               {type === "package" ? <CardPackages pack={product} /> : null}
             </SwiperSlide>

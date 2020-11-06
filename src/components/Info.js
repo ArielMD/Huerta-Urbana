@@ -149,7 +149,7 @@ const Info = () => {
             absorción de vitaminas y antioxidantes.
           </p>
         </article>
-        <img src={imagen}></img>
+        <img src={imagen} alt=""></img>
       </div>
       <div className="section-2">
         <article>
@@ -161,7 +161,7 @@ const Info = () => {
             nutrientes, vitaminas y enzimas hasta 72 horas
           </p>
         </article>
-        <img src={imagen}></img>
+        <img src={imagen} alt=""></img>
       </div>
       <div className="section-3">
         <article>
@@ -174,7 +174,7 @@ const Info = () => {
             absorción de vitaminas y antioxidantes.
           </p>
         </article>
-        <img src={imagen}></img>
+        <img src={imagen} alt=""></img>
       </div>
     </InfoStyled>
   );

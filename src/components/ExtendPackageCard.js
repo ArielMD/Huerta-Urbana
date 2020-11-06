@@ -66,14 +66,14 @@ const ExtendPackageCard = ({ product }) => {
       <h1>{product.nombre}</h1>
       <p>{product.descripcion}</p>
       <ul className="include">
-        {product.incluye.map(product => (
-          <li>{product}</li>
+        {product.incluye.map((product, index) => (
+          <li key={index}>{product}</li>
         ))}
       </ul>
       <ul className="price">
         <h2>Disponible para</h2>
-        {product.disponible.map(dis => (
-          <li>
+        {product.disponible.map((dis, index) => (
+          <li key={index}>
             {dis.dias}: <span>{dis.precio}</span>
           </li>
         ))}

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import hero from "../images/hero.jpg";
 import logo from "../images/logo.png";
-import Button from "../components/Button";
 
 const HeroStyled = styled.main`
   width: 100%;
@@ -114,7 +113,7 @@ const Hero = props => {
       <div className="bg-dark">
         <h1>Más que Jugos, ¡Pura Vida!</h1>
         <div className="logo-hero">
-          <img src={logo}></img>
+          <img src={logo} alt="logo"></img>
         </div>
         <p>
           No dejes tu salud para después. Aumenta tus defensas de forma natural

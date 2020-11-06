@@ -87,7 +87,7 @@ const ExtendProductCard = ({ juice }) => {
       <div className="wrapper">
         <p className="content">{juice.beneficios.map(ben => ben + ", ")}</p>
         <div className="bg-image">
-          <img src={juice.imagen} />
+          <img src={juice.imagen} alt="juice" />
         </div>
       </div>
       <span>${juice.precio}</span>

@@ -90,7 +90,7 @@ const FooterSyled = styled.footer`
 const Footer = () => {
   return (
     <FooterSyled id="contact">
-      <img src={logo}></img>
+      <img src={logo} alt="logo"></img>
       <div className="pages">
         <h2>Páginas</h2>
         <Link to="/">Home</Link>
