@@ -26,16 +26,16 @@ const ProductCardList = ({ list, text, type }) => {
 
       {type === "product" ? (
         <ListStyled>
-          {list.map(product => (
-            <ExtendProductCard juice={product} />
+          {list.map((product, index) => (
+            <ExtendProductCard key={index} juice={product} />
           ))}
         </ListStyled>
       ) : null}
 
       {type === "package" ? (
         <ListStyled>
-          {list.map(product => (
-            <ExtendPackageCard product={product} />
+          {list.map((product, index) => (
+            <ExtendPackageCard key={index} product={product} />
           ))}
         </ListStyled>
       ) : null}

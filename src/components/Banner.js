@@ -28,10 +28,13 @@ const BannerStyled = styled.div`
       text-align: center;
       font-size: 24px;
     }
+    p {
+      text-align: center;
+    }
   }
 
   .social {
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: space-around;
     img {
