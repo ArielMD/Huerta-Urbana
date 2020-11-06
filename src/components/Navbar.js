@@ -35,6 +35,10 @@ const Nav = styled.nav`
     }
   }
 
+  .active {
+    border-bottom: #000000 solid 2px;
+  }
+
   .nav-logo {
     width: 85px;
     height: 85px;
@@ -107,19 +111,19 @@ const Navbar = () => {
       />
 
       <ul className="nav-menu">
-        <Link className="menu-item" to={"/"}>
+        <Link className="menu-item" to={"/"} activeClassName="active">
           Home
         </Link>
 
-        <Link className="menu-item" to={"/Products"}>
+        <Link className="menu-item" to={"/Products"} activeClassName="active">
           Productos
         </Link>
 
-        <Link className="menu-item" to={"/AboutUs"}>
+        <Link className="menu-item" to={"/AboutUs"} activeClassName="active">
           Nosotros
         </Link>
 
-        <Link className="menu-item" to={"#contact"}>
+        <Link className="menu-item" to={"#contact"} activeClassName="active">
           Contactanos
         </Link>
       </ul>

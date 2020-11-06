@@ -27,7 +27,7 @@ const Layout = props => {
         <link
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway&display=swap"
           rel="stylesheet"
-        ></link>
+        />
       </Helmet>
 
       {props.children}

@@ -49,9 +49,13 @@ const CardStyled = styled.div`
       border-radius: 5px;
       background-color: #01665c;
       color: #ffffff;
-      border-style: none;
-      border-color: #aace46;
       align-self: flex-end;
+      outline: none;
+      border-style: none;
+      margin-right: 3%;
+      :hover {
+        background-color: #035022;
+      }
     }
   }
 

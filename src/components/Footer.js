@@ -13,6 +13,10 @@ const FooterSyled = styled.footer`
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-evenly;
+  a {
+    text-decoration: none;
+    color: #000;
+  }
 
   img {
     width: 80px;
@@ -90,15 +94,25 @@ const Footer = () => {
       <div className="pages">
         <h2>Páginas</h2>
         <Link to="/">Home</Link>
-        <Link to="/products">Productos</Link>
+        <Link to="/Products">Productos</Link>
         <Link to="/AboutUs">Quienes somos</Link>
       </div>
       <ul className="contact">
         <h2>Contactanos</h2>
-        <li>Huera Urbana Juice Detox</li>
-        <li>@huertaUrbana.vsa</li>
+        <li>
+          <a href="https://www.instagram.com/huertaurbana.vsa/">
+            Huera Urbana Juice Detox
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/huertaurbana.vsa/">
+            @huertaUrbana.vsa
+          </a>
+        </li>
         <li>huertaurbana.vsa@gmail.com</li>
-        <li>9932397472</li>
+        <li>
+          <a href="https://www.instagram.com/huertaurbana.vsa/">9932397472</a>
+        </li>
       </ul>
     </FooterSyled>
   );

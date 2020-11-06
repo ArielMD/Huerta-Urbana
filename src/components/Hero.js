@@ -57,6 +57,12 @@ const HeroStyled = styled.main`
       font-size: 18px;
       background-color: #035022;
       color: #ffffff;
+      outline: none;
+      border-radius: 10px;
+      :hover {
+        border: #ffffff solid 1px;
+        background-color: #069c42;
+      }
     }
   }
 
