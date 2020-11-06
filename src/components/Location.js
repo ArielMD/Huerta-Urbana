@@ -25,6 +25,7 @@ const LocationStyled = styled.div`
     width: 100%;
     height: 350px;
   }
+
   @media (min-width: 768px) {
     max-width: 90%;
     flex-direction: row;
@@ -40,7 +41,7 @@ const LocationStyled = styled.div`
 const Location = () => {
   return (
     <React.Fragment>
-      <Banner text="Te interesan nuestros productos"></Banner>
+      <Banner text="¿Te Interesan Nuestros Productos?" social></Banner>
       <LocationStyled>
         <div className="contact">
           <h1>Contamos con servicio a domicilio (6km)</h1>

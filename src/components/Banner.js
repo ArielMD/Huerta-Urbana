@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import bg from "../images/bg.jpg";
+import facebook from "../images/facebook.png";
+import instagram from "../images/instagram.png";
+import whatsapp from "../images/whatsapp.png";
 
 const BannerStyled = styled.div`
   background-image: url(${bg});
@@ -12,11 +15,11 @@ const BannerStyled = styled.div`
   height: 150px;
   margin: 21px 0px;
 
-  div {
+  .bg {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
     width: 100%;
     height: 100%;
 
@@ -27,30 +30,77 @@ const BannerStyled = styled.div`
     }
   }
 
+  .social {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
+    }
+  }
+
   @media (min-width: 768px) and (max-width: 1200px) {
     height: 230px;
-    div {
+    .bg {
       h1 {
         font-size: 24px;
+      }
+      p {
+        font-size: 21px;
+      }
+      .social {
+        width: 50%;
+        img {
+          width: 70px;
+          height: 70px;
+        }
       }
     }
   }
   @media screen and (min-width: 1200px) {
     height: 400px;
-    div {
+    .bg {
       h1 {
         font-size: 48px;
+      }
+      p {
+        font-size: 36px;
+      }
+      .social {
+        width: 50%;
+        img {
+          width: 100px;
+          height: 100px;
+        }
       }
     }
   }
 `;
 
-const Banner = ({ text, children }) => {
+const Banner = ({ text, social, children }) => {
   return (
     <BannerStyled>
-      <div>
+      <div className="bg">
         <h1>{text}</h1>
-        {children}
+        {social ? (
+          <React.Fragment>
+            <p>Realiza tus pedidos a traves de nuestras redes sociales</p>
+            <div className="social">
+              <a href="https://www.instagram.com/huertaurbana.vsa/">
+                <img src={instagram} />
+              </a>
+              <a href="https://www.facebook.com/HuertaUrbanavsa%20/">
+                <img src={facebook} />
+              </a>
+
+              <a href="">
+                <img src={whatsapp} />
+              </a>
+            </div>
+          </React.Fragment>
+        ) : null}
       </div>
     </BannerStyled>
   );
