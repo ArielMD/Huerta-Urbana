@@ -102,7 +102,9 @@ const Navbar = () => {
 
   return (
     <Nav state={state}>
-      <img className="nav-logo" src={logo} alt="" />
+      <Link to={"/"} className="nav-logo">
+        <img className="nav-logo" src={logo} alt="" />
+      </Link>
 
       <img
         className="menu-icon"

@@ -53,6 +53,7 @@ const CardStyled = styled.div`
       outline: none;
       border-style: none;
       margin-right: 3%;
+      cursor: pointer;
       :hover {
         background-color: #035022;
       }

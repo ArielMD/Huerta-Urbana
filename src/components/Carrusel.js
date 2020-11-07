@@ -9,7 +9,6 @@ import Title from "./Title";
 
 const CarruselStyled = styled.div`
   margin-top: 50px;
-  margin-bottom: 50px;
 `;
 
 const SwiperStyled = styled(Swiper)`

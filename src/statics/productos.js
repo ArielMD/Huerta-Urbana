@@ -4,7 +4,7 @@ import ingredientes from "./ingredientes";
 const productos = [
   {
     id: 1,
-    nombre: "Jugos Verdes",
+    nombre: "Jugos Verdes (500ml)",
     productos: [
       {
         nombre: "Día Verde",
@@ -130,7 +130,7 @@ const productos = [
   },
   {
     id: 2,
-    nombre: "Jugos de Raiz",
+    nombre: "Jugos de Raiz  (500ml)",
     productos: [
       {
         nombre: "Bloody Mary",
@@ -189,7 +189,7 @@ const productos = [
   },
   {
     id: 3,
-    nombre: "Shots de Jengibre",
+    nombre: "Shots de Jengibre (60ml)",
     productos: [
       {
         nombre: "Shot Jengibre, piña",
@@ -255,7 +255,7 @@ const productos = [
   },
   {
     id: 4,
-    nombre: "Smothies",
+    nombre: "Smothies (500ml)",
     productos: [
       {
         nombre: "Frutos Rojos",
@@ -396,7 +396,7 @@ const productos = [
   },
   {
     id: 5,
-    nombre: "Leches Vegetales",
+    nombre: "Leches Vegetales (500ml)",
     productos: [
       {
         nombre: "Leche de Almendras",

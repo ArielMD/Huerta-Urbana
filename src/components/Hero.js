@@ -58,6 +58,7 @@ const HeroStyled = styled.main`
       color: #ffffff;
       outline: none;
       border-radius: 10px;
+      cursor: pointer;
       :hover {
         border: #ffffff solid 1px;
         background-color: #069c42;

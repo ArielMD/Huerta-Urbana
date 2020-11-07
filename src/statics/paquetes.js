@@ -146,6 +146,55 @@ const paquetes = [
       },
     ],
   },
+  {
+    nombre: "Paquetes Adicionales",
+    productos: [
+      {
+        nombre: "Paquete Semanal",
+        descripcion: "6 Jugos Verdes",
+        incluye: [],
+        disponible: [
+          {
+            dias: "Semanal",
+            precio: "$390.00",
+          },
+        ],
+      },
+      {
+        nombre: "Black Detox",
+        descripcion: "6 limonadas Activas",
+        incluye: [],
+        disponible: [
+          {
+            dias: "semanal",
+            precio: "$275.00",
+          },
+        ],
+      },
+      {
+        nombre: "Veggie Milk",
+        descripcion: "",
+        incluye: [],
+        disponible: [
+          {
+            dias: "Semanal",
+            precio: "$275.00",
+          },
+        ],
+      },
+      {
+        nombre: "Ginger Shots",
+        descripcion: "6 Shots de Jengibre",
+        incluye: [],
+        disponible: [
+          {
+            dias: "Semanal",
+            precio: "$200.00",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export default paquetes;

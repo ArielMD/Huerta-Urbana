@@ -57,6 +57,17 @@ const CardStyled = styled.div`
     border-radius: 5px;
     border-style: none;
     outline: none;
+    cursor: pointer;
+
+    :hover {
+      background-color: #035022;
+      color: #ffffff;
+    }
+
+    :focus {
+      background-color: #035022;
+      outline: 2px #035022;
+    }
   }
 `;
 

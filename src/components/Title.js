@@ -11,6 +11,8 @@ const TitleStyled = styled.div`
   justify-content: center;
   align-content: center;
   margin-bottom: 40px;
+  margin-top: 20px;
+
   h1 {
     align-self: center;
     font-weight: 200;
@@ -20,6 +22,7 @@ const TitleStyled = styled.div`
   @media (min-width: 768px) and (max-width: 1200px) {
     max-width: 90%;
     height: 45px;
+    margin-top: 50px;
     h1 {
       font-size: 24px;
     }
@@ -28,6 +31,7 @@ const TitleStyled = styled.div`
   @media screen and (min-width: 1200px) {
     max-width: 80%;
     height: 50px;
+    margin-top: 50px;
     h1 {
       font-size: 36px;
     }

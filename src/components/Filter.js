@@ -18,6 +18,17 @@ const FilterStyled = styled.div`
     background-color: #aace46;
     margin: 10px;
     outline: none;
+    cursor: pointer;
+
+    :hover {
+      background-color: #035022;
+      color: #ffffff;
+    }
+
+    :focus {
+      background-color: #035022;
+      color: #ffffff;
+    }
   }
 
   .all {
