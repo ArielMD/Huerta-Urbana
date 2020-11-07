@@ -193,7 +193,7 @@ const productos = [
     productos: [
       {
         nombre: "Shot Jengibre, piña",
-        precio: 60,
+        precio: 30,
         imagen: img,
         ingredientes: [ingredientes.jengibre, ingredientes.piña],
         beneficios: [
@@ -205,7 +205,7 @@ const productos = [
       },
       {
         nombre: "Shot jengibre, Cúrcuma, naranja",
-        precio: 60,
+        precio: 30,
         imagen: img,
         ingredientes: [
           ingredientes.jengibre,
@@ -221,7 +221,7 @@ const productos = [
       },
       {
         nombre: "Shot Jengibre, Canela, Manzana",
-        precio: 60,
+        precio: 30,
         imagen: img,
         ingredientes: [
           ingredientes.jengibre,
@@ -237,7 +237,7 @@ const productos = [
       },
       {
         nombre: "Shot Jengibre, Limón, Zanahoria",
-        precio: 60,
+        precio: 30,
         imagen: img,
         ingredientes: [
           ingredientes.jengibre,
@@ -259,7 +259,7 @@ const productos = [
     productos: [
       {
         nombre: "Frutos Rojos",
-        precio: 60,
+        precio: 70,
         imagen: img,
         ingredientes: [
           ingredientes.lecheCoco,
@@ -271,7 +271,7 @@ const productos = [
       },
       {
         nombre: "Energetico",
-        precio: 60,
+        precio: 70,
         imagen: img,
         ingredientes: [
           ingredientes.avena,
@@ -287,7 +287,7 @@ const productos = [
       },
       {
         nombre: "Del Tropico",
-        precio: 60,
+        precio: 70,
         imagen: img,
         ingredientes: [
           ingredientes.lecheCoco,
@@ -303,7 +303,7 @@ const productos = [
       },
       {
         nombre: "Chocolate Skinny",
-        precio: 60,
+        precio: 70,
         imagen: img,
         ingredientes: [
           ingredientes.lecheCoco,
@@ -321,7 +321,7 @@ const productos = [
       },
       {
         nombre: "Morafresh",
-        precio: 60,
+        precio: 70,
         imagen: img,
         ingredientes: [
           ingredientes.lecheAlmendras,
@@ -338,7 +338,7 @@ const productos = [
       },
       {
         nombre: "Manzana-Canela",
-        precio: 60,
+        precio: 70,
         imagen: img,
         ingredientes: [
           ingredientes.lecheAlmendras,
@@ -356,7 +356,7 @@ const productos = [
       },
       {
         nombre: "Super Fresa",
-        precio: 60,
+        precio: 70,
         imagen: img,
         ingredientes: [
           ingredientes.lecheAlmendras,
@@ -375,7 +375,7 @@ const productos = [
       },
       {
         nombre: "Corazón Contento",
-        precio: 60,
+        precio: 70,
         imagen: img,
         ingredientes: [
           ingredientes.avena,
@@ -400,7 +400,7 @@ const productos = [
     productos: [
       {
         nombre: "Leche de Almendras",
-        precio: 60,
+        precio: 45,
         imagen: img,
         ingredientes: [
           ingredientes.almendras,
@@ -420,7 +420,7 @@ const productos = [
       },
       {
         nombre: "Leche de Coco",
-        precio: 60,
+        precio: 45,
         imagen: img,
         ingredientes: [
           ingredientes.pulpaCoco,
@@ -438,7 +438,7 @@ const productos = [
       },
       {
         nombre: "Leche Dorada",
-        precio: 60,
+        precio: 45,
         imagen: img,
         ingredientes: [
           ingredientes.lecheCoco,
@@ -462,7 +462,7 @@ const productos = [
     productos: [
       {
         nombre: "Aloe Vera",
-        precio: 60,
+        precio: 45,
         imagen: img,
         ingredientes: [
           ingredientes.pulpaAloe,
@@ -481,14 +481,14 @@ const productos = [
       },
       {
         nombre: "Agua de Coco",
-        precio: 60,
+        precio: 20,
         imagen: img,
         ingredientes: [ingredientes.aguaCoco],
         beneficios: ["Hidratante", "Depurativa"],
       },
       {
         nombre: "Kombucha",
-        precio: 60,
+        precio: 30,
         imagen: img,
         ingredientes: [ingredientes.teNegro],
         beneficios: [
@@ -501,7 +501,7 @@ const productos = [
       },
       {
         nombre: "Agua Alcalina con Clorofila",
-        precio: 60,
+        precio: 25,
         imagen: img,
         ingredientes: [],
         beneficios: [
@@ -513,7 +513,7 @@ const productos = [
       },
       {
         nombre: "Limonada Activada",
-        precio: 60,
+        precio: 45,
         imagen: img,
         ingredientes: [
           ingredientes.carbonActivado,
@@ -531,7 +531,7 @@ const productos = [
       },
       {
         nombre: "Limonada Antigripal",
-        precio: 60,
+        precio: 45,
         imagen: img,
         ingredientes: [
           ingredientes.limon,

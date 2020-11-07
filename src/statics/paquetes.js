@@ -173,7 +173,7 @@ const paquetes = [
       },
       {
         nombre: "Veggie Milk",
-        descripcion: "",
+        descripcion: "6 Leches Vegetales",
         incluye: [],
         disponible: [
           {
