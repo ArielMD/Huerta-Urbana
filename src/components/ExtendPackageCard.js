@@ -48,27 +48,6 @@ const CardStyled = styled.div`
       }
     }
   }
-
-  button {
-    background-color: #01665c;
-    color: #ffffff;
-    width: 80px;
-    height: 30px;
-    border-radius: 5px;
-    border-style: none;
-    outline: none;
-    cursor: pointer;
-
-    :hover {
-      background-color: #035022;
-      color: #ffffff;
-    }
-
-    :focus {
-      background-color: #035022;
-      outline: 2px #035022;
-    }
-  }
 `;
 
 const ExtendPackageCard = ({ product }) => {
@@ -89,7 +68,6 @@ const ExtendPackageCard = ({ product }) => {
           </li>
         ))}
       </ul>
-      <button>Ver más</button>
     </CardStyled>
   );
 };

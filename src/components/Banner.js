@@ -14,7 +14,7 @@ const BannerStyled = styled.div`
   width: 100%;
   height: 150px;
   margin: 21px 0px;
-  margin-top: 80px;
+  /* margin-top: 80px; */
 
   .bg {
     display: flex;
