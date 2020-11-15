@@ -12,15 +12,17 @@ const AboutSyled = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  } */
-
+  margin: auto;
   p {
     font-family: Raleway;
     font-size: 28px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1200px) {
+    min-width: 90%;
+  }
+  @media (min-width: 1200px) {
+    min-width: 80%;
   }
 `;
 
@@ -29,12 +31,12 @@ const SectionStyled = styled.section`
   display: flex;
   flex-direction: column;
   padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   max-width: 725px;
   align-items: center;
   box-shadow: gray 1px 1px 5px;
-
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
   .container {
     margin-bottom: 20px;
     h2 {
@@ -50,6 +52,31 @@ const SectionStyled = styled.section`
     width: 100%;
     height: 250px;
     object-fit: cover;
+  }
+
+  @media (min-width: 768px) {
+    min-width: 90%;
+    flex-direction: row;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    height: 300px;
+    img {
+      width: 45%;
+      height: 300px;
+    }
+    .container {
+      p {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+    }
+
+    .section-2 {
+      order: 1;
+    }
+  }
+  @media (min-width: 1200px) {
+    min-width: 80%;
   }
 `;
 const About = () => {
