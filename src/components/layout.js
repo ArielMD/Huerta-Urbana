@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { createGlobalStyle } from "styled-components";
 import bg from "../images/pattern.png";
+import CustomerChat from "./CustomerChat";
 
 const GlobalStyled = createGlobalStyle`
 *{
@@ -31,6 +32,7 @@ const Layout = props => {
       </Helmet>
 
       {props.children}
+      <CustomerChat />
     </React.Fragment>
   );
 };
