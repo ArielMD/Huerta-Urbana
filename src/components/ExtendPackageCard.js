@@ -15,7 +15,7 @@ const CardStyled = styled.div`
   h1 {
     font-size: 18px;
     text-align: center;
-    background-color: #e01883;
+    background-color: #9c1680;
     color: #ffffff;
     padding: 5px;
   }
