@@ -5,8 +5,6 @@ import Hero from "../components/Hero";
 import Info from "../components/Info";
 import ProductsList from "../components/ProductsList";
 import PackagesList from "../components/PackagesList";
-import Location from "../components/Location";
-import Footer from "../components/Footer";
 
 const IndexPage = () => (
   <Layout>
@@ -16,8 +14,6 @@ const IndexPage = () => (
     <Info />
     <ProductsList />
     <PackagesList />
-    <Location />
-    <Footer />
   </Layout>
 );
 

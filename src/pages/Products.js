@@ -1,8 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
-import Location from "../components/Location";
-import Footer from "../components/Footer";
 import ExtendProductList from "../components/ExtendProductList";
 import ExtendPackageList from "../components/ExtendPackageList";
 
@@ -12,8 +10,6 @@ const Productos = () => {
       <Navbar />
       <ExtendProductList />
       <ExtendPackageList />
-      <Location />
-      <Footer />
     </Layout>
   );
 };
