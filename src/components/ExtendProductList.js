@@ -17,7 +17,7 @@ const ExtendProductList = () => {
 
   return (
     <React.Fragment>
-      <Banner text="Conoce Nuestros Saludables Productos" />
+      <Banner text="Conoce Nuestros Saludables Productos" type="products" />
       <Filter filter={filter} />
       {juices.map(product => (
         <ProductCardList

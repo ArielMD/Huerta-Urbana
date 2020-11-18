@@ -9,6 +9,10 @@ const GlobalStyled = createGlobalStyle`
   padding: 0px;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Open Sans', sans-serif;
   background-color: #F5F5F5;

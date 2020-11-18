@@ -6,7 +6,10 @@ import ProductCardList from "./ProductCardList";
 const ExtendPackageList = () => {
   return (
     <React.Fragment>
-      <Banner text="Conoce Los Paquetes Que Tenemos Preparado Para Tí" />
+      <Banner
+        text="Conoce Los Paquetes Que Tenemos Preparado Para Tí"
+        type="packages"
+      />
       {packages.map(pack => (
         <ProductCardList
           key={pack.nombre}

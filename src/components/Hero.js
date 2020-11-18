@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import hero from "../images/hero.jpg";
 import logo from "../images/logo.png";
+import { Link } from "gatsby";
 
 const HeroStyled = styled.main`
   width: 100%;
@@ -122,8 +123,12 @@ const Hero = props => {
         </p>
 
         <div className="buttons-group">
-          <button>Productos</button>
-          <button>Paquetes</button>
+          <Link to="#products">
+            <button>Productos</button>
+          </Link>
+          <Link to="#packages">
+            <button>Paquetes</button>
+          </Link>
         </div>
       </div>
     </HeroStyled>

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Banner from "./Banner";
+import Map from "../components/Map";
 
 const LocationStyled = styled.div`
   display: flex;
@@ -20,8 +21,7 @@ const LocationStyled = styled.div`
     text-align: center;
   }
 
-  .map {
-    background-color: red;
+  .mapa {
     width: 100%;
     height: 350px;
   }
@@ -53,7 +53,9 @@ const Location = () => {
           <p>Lunes a Viernes: 8:00 - 18:00</p>
           <p>Sabado y Domingo: Cerrado</p>
         </div>
-        <div className="map"> mapa</div>
+        <div className="mapa">
+          <Map />
+        </div>
       </LocationStyled>
     </React.Fragment>
   );

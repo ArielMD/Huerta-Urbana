@@ -83,10 +83,10 @@ const BannerStyled = styled.div`
   }
 `;
 
-const Banner = ({ text, social, children }) => {
+const Banner = ({ text, social, type }) => {
   return (
     <BannerStyled>
-      <div className="bg">
+      <div className="bg" id={type}>
         <h1>{text}</h1>
         {social ? (
           <React.Fragment>

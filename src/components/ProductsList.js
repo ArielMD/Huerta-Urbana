@@ -6,7 +6,7 @@ import list from "../statics/productos";
 const ListProducts = () => {
   return (
     <React.Fragment>
-      <Banner text="Conoce Nuestros Saludables Productos" />
+      <Banner text="Conoce Nuestros Saludables Productos" type="products" />
 
       {list.map(product => (
         <Carrusel

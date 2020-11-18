@@ -6,7 +6,10 @@ import list from "../statics/paquetes";
 const ListPackages = () => {
   return (
     <React.Fragment>
-      <Banner text="Conoce Los Paquetes Que Tenemos Preparado Para Tí" />
+      <Banner
+        text="Conoce Los Paquetes Que Tenemos Preparado Para Tí"
+        type="packages"
+      />
       {list.map(product => (
         <Carrusel
           key={product.nombre}
