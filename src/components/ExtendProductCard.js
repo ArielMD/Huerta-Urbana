@@ -17,6 +17,9 @@ const CardStyled = styled.div`
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    background-color: #339699;
+    color: #fff;
+    padding: 5px;
   }
   .wrapper {
     display: flex;

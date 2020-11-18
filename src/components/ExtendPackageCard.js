@@ -15,6 +15,9 @@ const CardStyled = styled.div`
   h1 {
     font-size: 18px;
     text-align: center;
+    background-color: #e01883;
+    color: #ffffff;
+    padding: 5px;
   }
   h2 {
     font-size: 16px;
@@ -24,6 +27,7 @@ const CardStyled = styled.div`
 
   p {
     text-align: center;
+    font-weight: 800;
     font-size: 14px;
     padding-top: 10px;
     padding-bottom: 10px;
